@@ -17,11 +17,5 @@ public class UserController {
         return "Hello World";
     }
 
-    @GetMapping("/getUserById/{userId}")
-    public CommonResult<User> getUserById(@PathVariable Integer userId){
 
-        User u = new User(userId,"小明","123456");
-        return new CommonResult<>(200,"success(11000)",u);
-
-    }
 }
